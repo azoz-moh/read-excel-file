@@ -16,7 +16,7 @@ for row in range(len(df)):
     print(df.loc[row]['Zuhr'])
     print(df.loc[row]['Zuhr Iqama'].strftime('%I:%M'))
 
-# الان سنضع شرط يجلب البيانات حسب تاريخ اليوم و تاريخ الموجود في الملف
+# الان سنضع شرط يجلب البيانات حسب تاريخ الحالي و تاريخ الموجود في الملف
 print('____________________________________________')
 for row in range(len(df)):
     if df.loc[row]['Date'].strftime('%d-%m') == Machine_date:
